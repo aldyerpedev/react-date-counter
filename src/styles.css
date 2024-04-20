@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  padding: 2rem;
+  background-color: #3d0c11;
+  color: #d80032;
+}
+
+h1.main-title {
+  font-size: 6rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+
+.container {
+  width: 80rem;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #f78ca2;
+  color: #f9dec9;
+  font-size: 4rem;
+  padding: 0.2rem 2rem;
+  border-radius: 0.2rem;
+  font-weight: bold;
+}
+
+.date-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.date-counter > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 4rem;
+  width: 100%;
+  gap: 1rem;
+}
