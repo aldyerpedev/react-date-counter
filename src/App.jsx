@@ -12,13 +12,13 @@ export default function App() {
 }
 
 function DateCounter() {
-  const [step, setStep] = useState(0);
+  const [step, setStep] = useState(1);
   const [count, setCount] = useState(0);
   const dateNow = new Date();
   dateNow.setDate(dateNow.getDate() + count);
 
   function resetDate() {
-    setStep(0);
+    setStep(1);
     setCount(0);
   }
   return (
@@ -55,9 +55,11 @@ function DateCounter() {
         <span>{dateNow.toDateString()}</span>
       </div>
 
-      <div className='reset-date'>
-        <button onClick={resetDate}>Reset Date</button>
-      </div>
+      {count !== 0 || step !== 1 ? (
+        <div className='reset-date'>
+          <button onClick={resetDate}>Reset Date</button>
+        </div>
+      ) : null}
     </div>
   );
 }
